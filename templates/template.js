@@ -1,6 +1,6 @@
-module.exports={
-    HTML:function(title,control,body){
-        return`
+module.exports = {
+    HTML: function (title, control, body) {
+        return `
         <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +33,7 @@ module.exports={
         </div>
     </section>
     <footer>
-        yangmin&&copy;2020
+        yangmin&copy;2020
     </footer>
     <script>
     document.getElementById('search').addEventListener('change',_search)
@@ -64,8 +64,8 @@ while(i<tdname.length){
 </html>
         `
     },
-    TABLE_workers:function(config){
-        return`
+    TABLE_workers: function (config) {
+        return `
         <table>
         <thead>
             <tr>
@@ -84,8 +84,8 @@ while(i<tdname.length){
     </table>
         `
     },
-    TABLE_drivers:function(config){
-        return`
+    TABLE_drivers: function (config) {
+        return `
         <table>
         <thead>
             <tr>
@@ -104,8 +104,8 @@ while(i<tdname.length){
     </table>
         `
     },
-    TABLE_buses:function(config){
-        return`
+    TABLE_buses: function (config) {
+        return `
         <table>
         <thead>
             <tr>
@@ -122,8 +122,8 @@ while(i<tdname.length){
     </table>
         `
     },
-    SEARCH:()=>{
-    
+    SEARCH: () => {
+
         return `<div>
             <input type="input" id='search'onchange="_search()" placeholder="Search for names...">
         <div/>
@@ -137,6 +137,6 @@ while(i<tdname.length){
         
         
         `
-    
+
     }
 }
